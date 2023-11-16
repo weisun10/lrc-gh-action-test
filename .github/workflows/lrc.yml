@@ -19,6 +19,7 @@ on:
       lrc_test_id:
         description: 'Test ID'
         required: true
+        default: '3402'
       lrc_output_dir:
         description: 'The directory to save results'
         required: false
@@ -38,7 +39,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run test in LoadRunner Cloud
-        uses: MicroFocus/lrc-gh-action
+        uses: MicroFocus/lrc-gh-action@8ce1d26921ea4730536dbd2f5481ea1126ad8582
         id: lrc_run_test
         env:
           LRC_CLIENT_ID: ${{secrets.LRC_CLIENT_ID}}
