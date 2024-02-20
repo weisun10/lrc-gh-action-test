@@ -7,19 +7,19 @@ on:
       lrc_server:
         description: 'LRC URL'
         required: true
-        default: 'https://srl-qa1.saas.microfocus.com'
+        default: 'https://loadrunner-cloud.saas.microfocus.com'
       lrc_tenant:
         description: 'Tenant ID'
         required: true
-        default: '385245923'
+        default: '652261341'
       lrc_project:
         description: 'Project ID'
         required: true
-        default: '1'
+        default: '117'
       lrc_test_id:
         description: 'Test ID'
         required: true
-        default: '3402'
+        default: '2126'
       lrc_output_dir:
         description: 'The directory to save results'
         required: false
